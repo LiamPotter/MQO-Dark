@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MQO Dark
 // @namespace    https://github.com/LiamPotter/MQO-Dark
-// @version      0.1
+// @version      0.2
 // @description  Makes MQO a bit less colorful
 // @author       higun (Nix)
 // @include http://midenquest.com/Game.aspx
@@ -45,8 +45,9 @@ var scoutSearchButton;
     addGlobalStyle('#ZoneChat{background-color: #252525;}');
     addGlobalStyle('.prgActionOverlay{margin-top:-20px;color:#fff;}');
     addGlobalStyle('.ui-widget-header { border: 1px solid #909090; background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gradient-gray-wide.png) 100% 100% repeat-x; color: #ffffff; font-weight: bold; }');
-    addGlobalStyle('.ui-widget-content { border: 1px solid #000000; background: #eeeeee url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gray-white-tall-soft-1px.png) 50% top repeat-x; color: #333333; }')
+    addGlobalStyle('.ui-widget-content { border: 1px solid #000000; background: #eeeeee url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gray-white-tall-soft-1px.png) 50% top repeat-x;/* color: #333333; */; }')
     addGlobalStyle('.darkBtn {background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;}');
+    addGlobalStyle('.ui-progressbar{color: #ffffff}')
     prgOverlay = document.getElementById('prgActionOverlay');
     //prgOverlay.addEventListener('click', SetTSColors, false);
     setTimeout(function()
