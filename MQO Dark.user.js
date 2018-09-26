@@ -4,10 +4,11 @@
 // @version      0.2
 // @description  Makes MQO a bit less colorful
 // @author       higun (Nix)
+// @updateURL https://github.com/LiamPotter/MQO-Dark/blob/master/MQO%20Dark.user.js
 // @include http://midenquest.com/Game.aspx
 // @include http://www.midenquest.com/Game.aspx
 // @include https://www.midenquest.com/Game.aspx
-// @grant        none
+// @grant        GM_addStyle
 // ==/UserScript==
 
 var contentLoad;
@@ -21,6 +22,7 @@ var gatherSearchButton;
 var logSearchButton;
 var mineSearchButton;
 var scoutSearchButton;
+
 (function() {
     'use strict';
 
@@ -47,7 +49,10 @@ var scoutSearchButton;
     addGlobalStyle('.ui-widget-header { border: 1px solid #909090; background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gradient-gray-wide.png) 100% 100% repeat-x; color: #ffffff; font-weight: bold; }');
     addGlobalStyle('.ui-widget-content { border: 1px solid #000000; background: #eeeeee url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gray-white-tall-soft-1px.png) 50% top repeat-x;/* color: #333333; */; }')
     addGlobalStyle('.darkBtn {background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;}');
+    addGlobalStyle('.darkBtn:hover{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #9e9e9e !important; color:#000 !important;}');
+    addGlobalStyle('.ui-state-default{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;color:#f1f1f1}');
     addGlobalStyle('.ui-progressbar{color: #ffffff}')
+    //addGlobalStyle('#ContentLoad{color: white !important;}');
     prgOverlay = document.getElementById('prgActionOverlay');
     //prgOverlay.addEventListener('click', SetTSColors, false);
     setTimeout(function()
@@ -56,7 +61,7 @@ var scoutSearchButton;
     },1000);
     //SetMenuSearchButton();
 })();
-
+//waitForKeyElements("#CrumbBar", SetTSColors)
 function SetMenuSearchButton()
 {
     menuSearchButton=null;
@@ -100,7 +105,7 @@ function SetTSColors()
             SetTSColors();
         }
 
-        GetSearchMenuButtons();
+        //GetSearchMenuButtons();
 
     },500)
     //var contentLoad = document.getElementById('ContentLoad').children[1].children[0];
