@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MQO Dark
 // @namespace    https://github.com/LiamPotter/MQO-Dark
-// @version      0.4
+// @version      0.5
 // @description  Makes MQO a bit less colorful
 // @author       higun (Nix)
 // @updateURL https://github.com/LiamPotter/MQO-Dark/blob/master/MQO%20Dark.user.js
@@ -55,7 +55,7 @@ var scoutSearchButton;
     //addGlobalStyle('#btnOpen{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;color:#f1f1f1}');
     addGlobalStyle('.ui-progressbar{color: #ffffff;}')
     addGlobalStyle('.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{color: #ffffff;}}');
-    addGlobalStyle('.ui-state-hover a, .ui-state-hover a:hover{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #9e9e9e !important; color:#000 !important;}');
+    addGlobalStyle('.ui-state-hover a, .ui-state-hover a:hover{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x ;border: 1px solid #9e9e9e ; color:#000 ;}');
     addGlobalStyle('.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #9e9e9e !important; color:#000 !important;}')
     //addGlobalStyle('#ContentLoad{color: white !important;}');
     prgOverlay = document.getElementById('prgActionOverlay');
