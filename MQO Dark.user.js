@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MQO Dark
 // @namespace    https://github.com/LiamPotter/MQO-Dark
-// @version      0.3
+// @version      0.4
 // @description  Makes MQO a bit less colorful
 // @author       higun (Nix)
 // @updateURL https://github.com/LiamPotter/MQO-Dark/blob/master/MQO%20Dark.user.js
@@ -36,6 +36,7 @@ var scoutSearchButton;
     style.innerHTML = css;
     head.appendChild(style);
 }
+    addGlobalStyle('.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray-1px400.png) 50% 50% repeat-x;border: 1px solid #444444;color:#f1f1f1}');
     addGlobalStyle('#MainPanel{	/* background: rgb(82,105,127) url("Images/FullScreenLeft.jpg") no-repeat 160px; */}');
     addGlobalStyle('body{background-color: #000000;color: #fff;}');
     addGlobalStyle('#ZoneContent{ background-color:#6d6d6d;border-right: 2px solid #101010;border-bottom: 2px solid #101010;}');
@@ -50,7 +51,8 @@ var scoutSearchButton;
     addGlobalStyle('.ui-widget-content { border: 1px solid #000000; background: #eeeeee url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-gray-white-tall-soft-1px.png) 50% top repeat-x;/* color: #333333; */; }')
     addGlobalStyle('.darkBtn {background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;}');
     addGlobalStyle('.darkBtn:hover{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #9e9e9e !important; color:#000 !important;}');
-    addGlobalStyle('.ui-state-default{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;color:#f1f1f1}');
+    //addGlobalStyle('#btnOpenResBag{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;color:#f1f1f1}');
+    //addGlobalStyle('#btnOpen{background: #ffffff url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-dark-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #444444 !important;color:#f1f1f1}');
     addGlobalStyle('.ui-progressbar{color: #ffffff;}')
     addGlobalStyle('.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{color: #ffffff;}}');
     addGlobalStyle('.ui-state-hover a, .ui-state-hover a:hover{background: #000000 url(https://raw.githubusercontent.com/LiamPotter/MQO-Dark/master/Resources/Images/ui-bg-flat-gray2-1px400.png) 50% 50% repeat-x !important;border: 1px solid #9e9e9e !important; color:#000 !important;}');
